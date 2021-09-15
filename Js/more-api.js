@@ -1,3 +1,14 @@
+// when press enter to do search
+const inputField = document.getElementById('input-field');
+const searchBtn = document.getElementById('basic-addon2');
+
+inputField.addEventListener('keypress',function(event){
+    if(event.key === 'Enter'){
+        searchBtn.click();
+    }
+});
+
+
 const clearData = (id) =>{
     const clearData = document.getElementById(id);
     const clear = clearData.textContent = '';
